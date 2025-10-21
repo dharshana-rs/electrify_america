@@ -113,21 +113,21 @@ Unsupervised Clustering
 
 ## Repository Structure
 
-.
-├── data/
-│   ├── raw/                # Original datasets (EV WATTS, AFS, Census, etc.)
-│   ├── processed/          # Cleaned & merged datasets
-├── notebooks/
-│   ├── Data_Merge.ipynb
-│   ├── SL.ipynb            # Supervised learning notebook
-│   ├── UnSupervised_Learning.ipynb
-├── results/
-│   ├── figures/            # Visualizations and charts
-│   ├── models/             # Saved model files (if any)
-├── report/
-│   ├── Milestone_II_Final_Report.pdf
-│   ├── README.md
-└── LICENSE
+    .
+    ├── data/
+    │   ├── raw/                # Original datasets (EV WATTS, AFS, Census, etc.)
+    │   ├── processed/          # Cleaned & merged datasets
+    ├── notebooks/
+    │   ├── Data_Merge.ipynb
+    │   ├── SL.ipynb            # Supervised learning notebook
+    │   ├── UnSupervised_Learning.ipynb
+    ├── results/
+    │   ├── figures/            # Visualizations and charts
+    │   ├── models/             # Saved model files (if any)
+    ├── report/
+    │   ├── Milestone_II_Final_Report.pdf
+    │   ├── README.md
+    └── LICENSE
 
 
 
