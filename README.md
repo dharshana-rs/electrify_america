@@ -1,10 +1,11 @@
 # Electrify America: Forecasting Electric Vehicle Charging Demand
+
 ### Team 23 — Milestone II Final Project
 
-Contributors: Dharshana Somasunderam (DS), Zara Masood (ZM), Duy Ho (DH)
-Course: SIADS 696 012 FA 2025 - Milestone II
-Institution: University of Michigan, SIADS
-Term: Fall 2025
+    Contributors: Dharshana Somasunderam (DS), Zara Masood (ZM), Duy Ho (DH)
+    Course: SIADS 696 012 FA 2025 - Milestone II
+    Institution: University of Michigan, SIADS
+    Term: Fall 2025
 
 
 
