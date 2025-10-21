@@ -140,11 +140,13 @@ All datasets are publicly available via U.S. government open data portals.
 ## Contact
 
 For questions or collaboration:
+
 	•	Team: Dharshana Somasunderam (DS), Zara Masood (ZM), Duy Ho (DH)
 	•	Email: sdharsha@umich.edu, zarama@umich.edu, duyho@umich.edu
 	•	GitHub Repository: https://github.com/dharshana-rs/electrify_america
 
 ## Key Insights:
+
 	•	Ensemble models outperform linear ones due to non-linear feature relationships.
 	•	Population and number of ports were the most impactful predictors.
 
