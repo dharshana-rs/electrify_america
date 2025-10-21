@@ -10,6 +10,7 @@
 
 
 ## Project Overview 
+
 The Electrify America project aims to forecast electric vehicle (EV) charging demand and identify regional infrastructure gaps across the United States.
 Using a combination of supervised and unsupervised learning, our goal is to understand when and where EV charging demand will increase and how effectively the existing infrastructure meets that demand.
 
@@ -23,9 +24,9 @@ As EV ownership grows rapidly, the demand for electricity and public charging st
 Poorly distributed infrastructure risks creating accessibility issues and bottlenecks in sustainable transportation.
 Our project addresses the question:
 
-### Where and when will EV charging demand increase, and how well does the current infrastructure meet that demand?
+#### Where and when will EV charging demand increase, and how well does the current infrastructure meet that demand?
 
-## Motivation.
+## Motivation
 
 We are motivated to explore this project due to the growth of decarbonization policies, and a focus on environmentally friendly transportation. We noticed that there are several analyses focusing mainly on vehicle registration or station availability, but only few study about charging behavior and infrastructure characteristics at a granular, station-level scale. To address this gap, our team took this as an opportunity to combine multiple national datasets which we found. The datasets we decided to combine are EV WATTS, Alternative Fueling Stations, AFDC Vehicle Registration, and U.S. Census data to build a strong view of electric vehicle’s charging demand.
 
@@ -35,6 +36,7 @@ We are motivated to explore this project due to the growth of decarbonization po
 ### Supervised Learning
 
 We modeled EV charging demand (demand_score) using:
+
 	•	Ridge Regression (regularized linear baseline)
 	•	Random Forest Regressor
 	•	Gradient Boosting Regressor
@@ -45,6 +47,7 @@ Each model predicts energy consumption and average session counts using temporal
 Unsupervised Learning
 
 We performed clustering to identify:
+
 	•	Station archetypes (micro-level patterns using K-Means and DBSCAN)
 	•	Regional investment tiers (macro-level patterns across U.S. states)
 
@@ -67,11 +70,13 @@ All datasets are open-source and government-maintained, spanning 2019–2023.
 ## Feature Engineering
 
 We combined and cleaned raw data through:
+
 	1.	Standardization: Date/time formatting, unit normalization.
 	2.	Geographic Merging: Using FIPS codes for consistent joins.
 	3.	Missing Data Handling: Mode/missing imputation and census-based filling.
 	4.	Feature Encoding: One-hot encoding categorical variables, min–max normalization for numeric data.
 	5.	Derived Features:
+
 	    •	total_ports = ev_level2_evse_num + ev_dc_fast_num
 	    •	charging_efficiency = energy_kwh / charge_duration
 	    •	urbanization_index = population / number_of_stations
@@ -79,6 +84,7 @@ We combined and cleaned raw data through:
 
 
 Final dataset:
+
 	•	~110,000 records
 	•	25–30 engineered features
 	•	Coverage: 2019–2023
