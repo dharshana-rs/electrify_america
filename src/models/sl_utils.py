@@ -45,7 +45,7 @@ def build_preprocessor(num_cols, cat_cols):
             ("cat", OneHotEncoder(handle_unknown="ignore"), cat_cols),
         ],
         remainder="drop",
-        verbose_feature_names_out=False
+        verbose_feature_names_out=True
     )
 
 
@@ -136,7 +136,16 @@ def export_feature_importance( fitted_pipeline, X, y, out_path ):
     prep = fitted_pipeline.named_steps["prep"]
     feat_names = []
     if hasattr(prep, "get_feature_names_out"):
+        #feat_names = prep.get_feature_names_out()
+        #try:
+        #    feat_names = prep.get_feature_names_out()
+        #except ValueError:
+        #    feat_names = prep.get_feature_names_out()
+        #    feat_names = pd.Index(feat_names).duplicated(keep=False).astype(str) + "_" + feat_names
+        
         feat_names = prep.get_feature_names_out()
+        feat_names = pd.Index(feat_names).map(lambda x: x.replace(" ", "_")).to_list()
+        feat_names = pd.Index(feat_names + [f"dup_{i}" for i in range(len(feat_names))]).unique().to_list()
     else:
         feat_names = X.columns
 

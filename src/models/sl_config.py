@@ -1,5 +1,7 @@
 from dataclasses import dataclass
 from pathlib import Path
+import warnings
+warnings.filterwarnings("ignore", category=FutureWarning)
 
 @dataclass
 class SLPaths:
