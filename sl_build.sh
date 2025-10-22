@@ -8,4 +8,4 @@ python -m src.models.train_supervised \
 
 python -m src.models.train_supervised \
   --data data/processed/final_data/FinalFeaturesDF.csv \
-  --target energy_kwh
+  --target ENERGY_KWH
