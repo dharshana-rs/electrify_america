@@ -126,14 +126,20 @@ Unsupervised Clustering
     │   ├── processed/          # Cleaned & merged datasets
     ├── notebooks/
     │   ├── Data_Merge.ipynb
-    │   ├── SL.ipynb            # Supervised learning notebook
-    │   ├── UnSupervised_Learning.ipynb
+    │   ├── Supervised_Learning.ipynb            # Supervised learning notebook
+    │   ├── electricfy_america_unsupervisedleaarning.ipynb  # Unsupervised learning notebook
+    ├── src/
+    │   ├── data/            # data merge pipeline scripts
+    │   ├── models/          # supervised and unsupervised model pipeline scripts
     ├── results/
     │   ├── figures/            # Visualizations and charts
     │   ├── models/             # Saved model files (if any)
     ├── report/
     │   ├── Milestone_II_Final_Report.pdf
-    │   ├── README.md
+    │── README.md
+    │── requirements.txt
+    |── build.sh
+    |── sl_build.sh
     └── LICENSE
 
 
