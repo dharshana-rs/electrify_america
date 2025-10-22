@@ -163,3 +163,21 @@ For questions or collaboration:
 	•	Ensemble models outperform linear ones due to non-linear feature relationships.
 	•	Population and number of ports were the most impactful predictors.
 
+
+## Build & Training Scripts
+
+This project has two scripts at the repo root:
+	•	build.sh — end-to-end pipeline for data pull: data pull → clean/merge → data artifacts.
+	•	sl_build.sh — supervised-only pipeline (train/evaluate models from a prepared processed dataset).
+
+Both scripts are safe to re-run; outputs are overwritten in data/processed/ and results/.
+
+
+## Prerequisites
+
+	•	Python 3.10+ (recommended)
+	•	Create and activate a virtual environment:
+        
+        python -m venv .venv
+        source .venv/bin/activate   # Windows: .venv\Scripts\activate
+        pip install -r requirements.txt
