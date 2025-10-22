@@ -4,11 +4,11 @@
 ---
 
 ## Overview  
-The rapid adoption of electric vehicles (EVs) in the United States is placing new demands on public charging infrastructure.  
-This project aims to **forecast charging demand** and **identify regional infrastructure gaps** by combining session-level EV charging data, station-level infrastructure data, and demographic indicators.  
+In the United States, the increase usage of electric vehicles (EVs) is placing new demands on public charging infrastructure.  
+This project's goal is to **forecast charging demand** and **identify regional infrastructure gaps** by combining session-level EV charging data, station-level infrastructure data, and demographic factors.  
 
-We apply both **supervised** and **unsupervised** learning methods to analyze how factors such as time, pricing, facility type, and socioeconomic context influence energy usage and station demand.  
-The ultimate goal is to provide insights that help policymakers, energy planners, and charging network operators make data-driven infrastructure decisions.
+We apply both **supervised** and **unsupervised** learning methods to analyze how factors such as time, pricing, facility type, and socioeconomic factors influence energy usage and station demand.  
+The ultimate goal is to provide insights that help policymakers, energy companies, and charging station companies make data oriented infrastructure decisions.
 
 ---
 
@@ -23,4 +23,4 @@ The ultimate goal is to provide insights that help policymakers, energy planners
 
 3. **Merge and Enrich Data Sources**  
    - Combine multiple government datasets (EV WATTS, AFS, AFDC, Census, FIPS).  
-   - Integrate demographic and socioeconomic features for context-based insights.
+   - Integrate demographic and socioeconomic features for enhanced insights.
