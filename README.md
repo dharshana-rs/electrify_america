@@ -1,6 +1,6 @@
 # Electrify America: Forecasting Electric Vehicle Charging Demand
 
-### Team 23 — Milestone II Final Project
+## Team 23 — Milestone II Final Project
 
     Contributors: Dharshana Somasunderam (DS), Zara Masood (ZM), Duy Ho (DH)
     Course: SIADS 696 012 FA 2025 - Milestone II
@@ -44,7 +44,7 @@ We modeled EV charging demand (demand_score) using:
 
 Each model predicts energy consumption and average session counts using temporal, station, and regional features.
 
-Unsupervised Learning
+### Unsupervised Learning
 
 We performed clustering to identify:
 
